@@ -390,11 +390,11 @@ public class RegisterActions {
       new Shortcut(KeyStroke.getKeyStroke(KeyEvent.VK_UP, 0)),
     });
     parser.registerAction(MappingMode.NVO, "VimMotionUp", Command.Type.MOTION, Command.FLAG_MOT_EXCLUSIVE, new Shortcut[]{
-      new Shortcut("gk"),
+      new Shortcut("g-"),
       new Shortcut(new KeyStroke[]{KeyStroke.getKeyStroke('g'), KeyStroke.getKeyStroke(KeyEvent.VK_UP, 0)})
     });
     parser.registerAction(MappingMode.NVO, "VimMotionUpFirstNonSpace", Command.Type.MOTION, Command.FLAG_MOT_LINEWISE,
-                          new Shortcut('-'));
+                          new Shortcut('k'));
     parser.registerAction(MappingMode.NVO, "VimMotionWordEndLeft", Command.Type.MOTION, Command.FLAG_MOT_INCLUSIVE,
                           new Shortcut("ge"));
     parser.registerAction(MappingMode.NVO, "VimMotionWordEndRight", Command.Type.MOTION, Command.FLAG_MOT_INCLUSIVE,
